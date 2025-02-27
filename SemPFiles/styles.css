@@ -99,12 +99,10 @@ h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar a:hover, .navbar a.active {
     color: rgb(255, 255, 255);
 }
-.navbar a:active {
-    text-decoration: underline;
-}
+
 
 /* Top Section Home Page */
 .topsection {
@@ -164,7 +162,13 @@ h2, h3, h4, h5, h6 {
     text-align: center;
     border-radius: 10px;
     isolation: isolate;
+}
 
+#explore-btn:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: #41A3E1;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* Middle Section Home Page */ 
@@ -227,6 +231,7 @@ h2, h3, h4, h5, h6 {
 #forkids-btn {
     grid-column: 1;
     grid-row: 2;
+    font-size: 20px;
     background-color: #000;
     color: #fff;
     justify-self: center;
@@ -236,6 +241,12 @@ h2, h3, h4, h5, h6 {
     height: 50px;
     text-decoration: none;
     border-radius: 10px;
+}
+
+#forkids-btn:hover {
+    color: #ffffff;
+    background-color: #41A3E1;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 /* For Kids */
@@ -284,6 +295,12 @@ h2, h3, h4, h5, h6 {
     height: 70px;
     text-decoration: none;
     border-radius: 10px;
+}
+
+.message-btn:hover {
+    color: #ffffff;
+    background-color: #41A3E1;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 .scient-img {
@@ -479,7 +496,7 @@ h2, h3, h4, h5, h6 {
     align-content: start;
 }
 
-.visit-topsection h1 {
+#visit-h1 {
     justify-self: center;
 }
 
@@ -514,7 +531,7 @@ h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    padding: 30px;
+    padding: 42px 30px 42px;
     border-top: solid 4px #000;
     border-radius: 10px 10px 0 0;
     text-align: center;
@@ -528,6 +545,11 @@ h2, h3, h4, h5, h6 {
     padding: 0 7px;
     font-weight: 550;
 }
+
+.footer a:hover {
+    color: #41A3E1;
+}
+
 
 @media only screen and (min-width: 391px) {
     .exhabit-middlesection {
@@ -806,4 +828,24 @@ h2, h3, h4, h5, h6 {
         justify-content: start;
     }
     
+    .visit-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 50px;
+    }
+
+    #visit-h1 {
+        grid-column: 1/3;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .visit-topsection {
+        justify-content: end;
+    }
+
+    .visit-bottomsection {
+        justify-content: start;
+    }
+
     }
