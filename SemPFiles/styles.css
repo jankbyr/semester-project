@@ -84,9 +84,8 @@ h2, h3, h4, h5, h6 {
 .navbar {
     padding-top: 20px;
     position: relative;
-    grid-column: 1/3;
-    grid-row: 2;
     font-weight: 550;
+    justify-self: right;
 }
 
 .navbar a {
@@ -335,18 +334,22 @@ h2, h3, h4, h5, h6 {
     padding-top: 60px;
 }
 
+.biletto-img-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;    
+}
+
+/* .biletto-img-container img {
+    max-width: 750px;
+    min-width: none;
+    max-height: 250px;
+} */
+
 .biletto-img-container {
+    height: 250px;
     background-image: url(200kbimg/billetto.jpg);
     background-size: cover;
-}
-
-.biletto-img-container p {
-    height: 200px;
-}
-
-#billetto-img {
-    width: 100%;
-    height: max(100%);
 }
 
 .kids-bottomsection {
@@ -718,11 +721,19 @@ iframe {
     #starclub {
         padding-top: 100px;
         grid-column: 1/3;
+        justify-self: center;
     }
     
+
+    .biletto-img-grid {
+        
+        grid-template-columns: 1fr 4fr 1fr;
+            
+    }
+
+
     .biletto-img-container {
-        grid-row: 4;
-        margin-bottom: 100px;
+        grid-column: 2;
     }
 
     .kids-bottomsection {
